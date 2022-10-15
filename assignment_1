@@ -1,0 +1,157 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: FirstScreen(),
+    );
+  }
+}
+
+class FirstScreen extends StatefulWidget {
+  const FirstScreen({Key? key}) : super(key: key);
+
+  @override
+  State<FirstScreen> createState() => _FirstScreenState();
+}
+
+class _FirstScreenState extends State<FirstScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Assignment"),
+        centerTitle: true,
+      ),
+      backgroundColor: Colors.indigo[300],
+      body:  Column(
+        children: [
+          Card(
+            color: Color(0xff493267),
+            shape: RoundedRectangleBorder(
+              side: BorderSide(color: Colors.white),
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 5,bottom: 5),
+              child: Text("T-Shirt",style: TextStyle(color: Colors.white,fontSize: 18),),
+            ),
+           ),
+          Card(
+              color: Color(0xffffaaa5),
+            child: Row(
+             // mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpM7XAYWpbOD_kz2kwJ7_JTSN4au6r541xw&usqp=CAU',height: 60,width: 80,),
+                ),
+             Column(
+               crossAxisAlignment: CrossAxisAlignment.start,
+               children: [
+                 Text("Half sleev T-Shirt",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                 Text("Size : XXL"),
+                 Text("Regular Price : 550/-"),
+                 Text("Discount : 15%")
+               ],
+             )
+              ],
+            ),
+          ),
+          Card(
+            color: Color(0xffffaaa5),
+            child: Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpM7XAYWpbOD_kz2kwJ7_JTSN4au6r541xw&usqp=CAU',height: 60,width: 80,),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Half sleev T-Shirt",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                    Text("Size : XXL"),
+                    Text("Regular Price : 550/-"),
+                    Text("Discount : 15%")
+                  ],
+                )
+              ],
+            ),
+          ),
+          Card(
+            color: Color(0xffffaaa5),
+            child: Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpM7XAYWpbOD_kz2kwJ7_JTSN4au6r541xw&usqp=CAU',height: 60,width: 80,),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Half sleev T-Shirt",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                    Text("Size : XXL"),
+                    Text("Regular Price : 550/-"),
+                    Text("Discount : 15%")
+                  ],
+                )
+              ],
+            ),
+          ),
+          Card(
+            color: Color(0xffffaaa5),
+            child: Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpM7XAYWpbOD_kz2kwJ7_JTSN4au6r541xw&usqp=CAU',height: 60,width: 80,),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Half sleev T-Shirt",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                    Text("Size : XXL"),
+                    Text("Regular Price : 550/-"),
+                    Text("Discount : 15%")
+                  ],
+                )
+              ],
+            ),
+          ),
+          Card(
+            color: Color(0xffffaaa5),
+            child: Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpM7XAYWpbOD_kz2kwJ7_JTSN4au6r541xw&usqp=CAU',height: 60,width: 80,),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Half sleev T-Shirt",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                    Text("Size : XXL"),
+                    Text("Regular Price : 550/-"),
+                    Text("Discount : 15%")
+                  ],
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
